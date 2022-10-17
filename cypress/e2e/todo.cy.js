@@ -35,7 +35,7 @@ describe('TodoMVC', function() {
     cy.get('.new-todo').type('A thing to accomplish {enter}')
     cy.get('.todo-count').should('contain', '1 item left')
 
-    // Click it off -- it should be marked as completed.
+    // Click it off -- it should be marked as completed. hullo hullo
     cy.get('.toggle').click()
     cy.get('.todo-count').should('contain', '0 items left')
     cy.percySnapshot()
